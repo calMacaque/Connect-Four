@@ -1,2 +1,2 @@
 # Connect-Four
-I've created a simple text-based version of the Connect Four game using my beginner knowledge in Java. Instead of colored discs, I have implemented to characters, 'X' and 'O' to denote individual discs. Please advise any improvements, thank you!
+This repository contains a simple implementation of the classic Connect 4 game written in Java. Players take turns dropping colored discs into a grid, aiming to be the first to form a horizontal, vertical, or diagonal line of four of their own discs. The game features a text-based interface and includes functionality for player input validation and win condition checking.
