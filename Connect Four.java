@@ -11,8 +11,7 @@ class Main {
         }
     }
 
-    public static boolean move(char[][] grid, int turns) {
-        Scanner sc = new Scanner(System.in);
+    public static boolean move(char[][] grid, int turns, Scanner sc) {
         String str = (turns % 2 == 0 ? "---PLAYER 1'S TURN---\nEnter move: row(0-5) & column(0-6)\n" :
                 "---PLAYER 2'S TURN---\nEnter move: row(0-5) & column(0-6)\n");
         System.out.print(str);
@@ -85,9 +84,11 @@ class Main {
             }
         }
 
+        Scanner sc = new Scanner(System.in);
+
         boolean win = false, move = false; // move means wrong move actually
         for (int turns = 0; turns < 42; turns++) {
-            move = move(grid, turns);
+            move = move(grid, turns, sc);
 
             if (move) { // move validity check
                 move = false;
@@ -103,5 +104,6 @@ class Main {
                 break;
             }
         }
+        sc.close();
     }
 }
