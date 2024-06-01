@@ -18,7 +18,7 @@ class Main {
         viewGrid(grid);
         int row = sc.nextInt(), col = sc.nextInt();
 
-        // checking if move is valid
+        // checking if move is invalid
         if (!((row >= 0 && row <= 5) && (col >= 0 && col <= 6))) {
             System.out.println("WRONG POSITION, ROW(0-5) AND COLUMN (0-6)");
             return true;
